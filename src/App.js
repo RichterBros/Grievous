@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import { render } from 'react-dom'
+import React, {useState, props} from 'react'
+import { useSpring, to, animated, config } from 'react-spring'
+import { scale, dist } from 'vec-la'
+import { useDrag } from 'react-use-gesture'
+// import './index.css'
+import PullRelease from './PullRelease'
+import Duplicator, { makeCopy } from './Duplicator'
+import DemoColor from './DemoColor'
+function App(props) {
+  
+  const [color, setColor] = useState({
+    red: 'red',
+    blue: 'blue',
+    green: 'green',
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   <>
+    {/* <DemoColor item={'test'}/> */}
+    <Duplicator />
+  
+   </>
+  )
 }
 
+
 export default App;
+    
+    
+   
