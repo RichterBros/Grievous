@@ -68,6 +68,22 @@ body {
   /* text-align: center; */
 }
 
+.yellow{
+  background: url(./arm2_yellow.png) no-repeat;
+  position: center;
+  left: 0;
+  bottom:0;
+  width: 100px;
+  height: 275px;
+  text-align: center;
+  z-index: 1;
+}
+
+
+
+
+
+
 .green{
   background: url(./arm2.png) no-repeat;
   position: center;
@@ -91,6 +107,28 @@ body {
   transform:scaleX(-1);
 }
 
+.blue{
+  background: url(./arm2_blue.png) no-repeat;
+  position: center;
+  left: 0;
+  bottom:0;
+  width: 100px;
+  height: 275px;
+  text-align: center;
+  transform:scaleX(-1);
+}
+
+.purple{
+  background: url(./arm2_purple.png) no-repeat;
+  position: center;
+  left: 0;
+  bottom:0;
+  width: 100px;
+  height: 275px;
+  text-align: center;
+  transform:scaleX(-1);
+}
+
 .greenL{
   background: url(./arm2_left.png) no-repeat;
   position: center;
@@ -104,6 +142,39 @@ body {
 
 .redL{
   background: url(./arm2_left_red.png) no-repeat;
+  position: center;
+  left: 0;
+  bottom:0;
+  width: 100px;
+  height: 275px;
+  text-align: center;
+  transform:scaleX(-1);
+}
+
+.blueL{
+  background: url(./arm2_left_blue.png) no-repeat;
+  position: center;
+  left: 0;
+  bottom:0;
+  width: 100px;
+  height: 275px;
+  text-align: center;
+  transform:scaleX(-1);
+}
+
+.purpleL{
+  background: url(./arm2_left_purple.png) no-repeat;
+  position: center;
+  left: 0;
+  bottom:0;
+  width: 100px;
+  height: 275px;
+  text-align: center;
+  transform:scaleX(-1);
+}
+
+.yellowL{
+  background: url(./arm2_left_yellow.png) no-repeat;
   position: center;
   left: 0;
   bottom:0;

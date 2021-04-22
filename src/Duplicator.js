@@ -56,8 +56,11 @@ const Duplicator = (props) => {
 
       <div className='footer'>
         <button onClick={makeCopy}>click for left!</button>
-        <button style={{color: 'red'}} onClick={() => {setStyler('red'); setStyler2('redL') }}>click for red</button>
-        <button style={{color: 'green'}} onClick={() => {setStyler('green'); setStyler2('greenL')}}>click for green</button>
+        <button style={{backgroundColor: 'grey', color: 'red'}} onClick={() => {setStyler('red'); setStyler2('redL') }}>click for red</button>
+        <button style={{backgroundColor: 'grey', color: 'green'}} onClick={() => {setStyler('green'); setStyler2('greenL')}}>click for green</button>
+        <button style={{backgroundColor: 'grey', color: 'blue'}} onClick={() => {setStyler('blue'); setStyler2('blueL')}}>click for blue</button>
+        <button style={{backgroundColor: 'grey', color: 'purple'}} onClick={() => {setStyler('purple'); setStyler2('purpleL')}}>click for purple</button>
+        <button style={{backgroundColor: 'grey', color: 'yellow'}} onClick={() => {setStyler('yellow'); setStyler2('yellowL')}}>click for yellow</button>
         <button onClick={makeCopy2}>click for right!</button>
       
       <h1 style={{padding:0, margin: 0, color:`${styler}`}} >mousewheel: rotate --- current selected color: {styler}</h1>
