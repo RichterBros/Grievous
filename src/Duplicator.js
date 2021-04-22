@@ -49,7 +49,7 @@ const Duplicator = (props) => {
         </div>
       <div className='grievous'>
       {/* <TestRotate style='rot' /> */}
-        <img src={grievous3} ></img>
+        <img src={grievous3} alt='you are a bold one' ></img>
       </div>
         
       
