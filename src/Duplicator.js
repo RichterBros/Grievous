@@ -11,6 +11,7 @@ import Flip from './Flip'
 import DemoColor from './DemoColor'
 const Duplicator = (props) => {
     const [styler, setStyler] = useState('green')
+    const [styler2, setStyler2] = useState('greenL')
     const [ copy, copySet ] = useState([])
     const [ copy2, copySet2] = useState([])
     
@@ -21,13 +22,13 @@ const Duplicator = (props) => {
       console.log(copy)
     }
     const makeCopy2 = (props) => {
-      const newCopy2 = copy2.concat(<PullRelease2 />)
+      const newCopy2 = copy2.concat(<PullRelease2 item2={styler2} />)
       copySet2(newCopy2)
       console.log(newCopy2)
     }
     
    
-    
+    const L = 'L'
     
   
     return(
@@ -46,19 +47,20 @@ const Duplicator = (props) => {
           {copy2}
           
         </div>
-      <div >
+      <div className='grievous'>
       {/* <TestRotate style='rot' /> */}
-        <img src={grievous3}></img>
+        <img src={grievous3} ></img>
       </div>
         
       
 
       <div className='footer'>
         <button onClick={makeCopy}>click for left!</button>
-        <button onClick={() => setStyler('red')}>click for red</button>
-        <button onClick={() => setStyler('green')}>click for green</button>
+        <button style={{color: 'red'}} onClick={() => {setStyler('red'); setStyler2('redL') }}>click for red</button>
+        <button style={{color: 'green'}} onClick={() => {setStyler('green'); setStyler2('greenL')}}>click for green</button>
         <button onClick={makeCopy2}>click for right!</button>
-      <h1 style={{padding:0, margin: 0}} >current selected color: {styler}</h1>
+      
+      <h1 style={{padding:0, margin: 0, color:`${styler}`}} >mousewheel: rotate --- current selected color: {styler}</h1>
       </div>
     </>
   )
